@@ -9,5 +9,38 @@
 	--color-yellow-creme: #ffe0b2;
 	--color-obsidian: #0b1215;
 	--color-obsidian-light: #000000;
+	--white: #ffffff;
 	--drop-shadow-my: 0 0 24px --color-obsidian;
+	--transition: 0.4s all ease-in-out;
+}
+
+.animal_picture {
+	transition: var(--transition);
+}
+
+.animal_box:hover .animal_picture {
+	transform: scale(1.4) translateY(2rem);
+}
+
+.animal_name {
+	transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.animal_box:hover .animal_name {
+	color: var(--color-white-creme);
+	animation: animalHighlight 0.5s ease-in-out forwards;
+	animation-delay: 0.2s;
+	transform: translateY(-4rem) scale(1.2);
+}
+
+@keyframes animalHighlight {
+	0% {
+		letter-spacing: 0;
+		color: var(--color-brown-creme);
+	}
+	100% {
+		letter-spacing: 10px;
+		color: var(--color-white-creme);
+		background-color: rgba(0, 0, 0, 0.25);
+	}
 }

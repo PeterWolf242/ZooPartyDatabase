@@ -2,10 +2,10 @@ import { Animal } from "./data";
 
 export default function AnimalCard(props: Animal) {
 	return (
-		<div className="bg-brown-creme flex flex-col rounded-2xl h-[58rem] overflow-hidden pt-10">
+		<div className="animal_box bg-brown-creme flex flex-col rounded-2xl h-[58rem] overflow-hidden pt-10 cursor-pointer">
 			<div className="w-[12rem] flex justify-center items-center h-[12rem] mx-auto">
 				<img
-					className="block object-cover saturate-50"
+					className="animal_picture block object-cover saturate-50"
 					src={props.imgURL}
 					alt=""
 				/>
@@ -15,7 +15,7 @@ export default function AnimalCard(props: Animal) {
 			</p> */}
 			<article>
 				{/* Animal-Name */}
-				<h2 className="text-brown-dark text-5xl text-center my-6 font-bold tracking-[5px] uppercase">
+				<h2 className="animal_name w-fit mx-auto text-brown-dark text-5xl text-center font-bold tracking-[5px] uppercase py-4 px-8">
 					{props.name}
 					{/* Lateinischer Name */}
 				</h2>

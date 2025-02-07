@@ -35,7 +35,7 @@ export default function AnimalCard(props: Animal) {
 					{props.lifespan} Years
 				</p>
 				{/* Beschreibung */}
-				<div className="bg-yellow-creme text-center text-2xl h-[375px] flex items-start border-t-obsidian border-t-8">
+				<div className="bg-yellow-creme text-center text-2xl h-[390px] flex items-start border-t-obsidian border-t-8">
 					<p className="text-obsidian font-semibold leading-10 px-16 flex items-center h-100">
 						{props.funFacts}
 					</p>
